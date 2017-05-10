@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc40dc6-9404-4af3-8dfd-881e2a249b42" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.db" afterPath="$PROJECT_DIR$/test.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteJDBC.java" afterPath="$PROJECT_DIR$/SQLiteJDBC.java" />
     </list>
@@ -19,21 +20,27 @@
       <file leaf-file-name="SQLiteJDBC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="596">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1494443718000" expanded="true" signature="3121:3403" ph="CREATE TABLE... COMPANY" />
-                <marker date="1494443718000" expanded="true" signature="3121:3457" ph="CREATE TABLE... COMPANY" />
-                <marker date="1494443718000" expanded="true" signature="3528:3576" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3528:3577" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3528:3617" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3528:3624" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3528:3653" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3714:3762" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3714:3831" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="3892:4010" ph="INSERT INTO COMPANY... " />
-                <marker date="1494443718000" expanded="true" signature="4071:4192" ph="INSERT INTO COMPANY... " />
+                <element signature="e#3147#3192#0" expanded="false" />
+                <element signature="e#3457#3483#0" expanded="false" />
+                <element signature="e#3654#3692#0" expanded="false" />
+                <marker date="1494447573000" expanded="true" signature="1635:1986" ph="SELECT al.Ti... ALBUM" />
+                <marker date="1494447573000" expanded="true" signature="1790:1985" ph="SELECT a.Art... Artist" />
+                <marker date="1494447573000" expanded="true" signature="4601:4649" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4601:4650" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4601:4692" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4601:4699" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4601:4728" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4795:4843" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4795:4914" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="4981:5101" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="5168:5291" ph="INSERT INTO COMPANY... " />
+                <marker date="1494447573000" expanded="true" signature="5498:5519" ph="SELECT * FRO... COMPANY" />
+                <marker date="1494447573000" expanded="true" signature="6303:6350" ph="UPDATE COMPA... " />
+                <marker date="1494447573000" expanded="true" signature="6471:6492" ph="SELECT * FRO... COMPANY" />
               </folding>
             </state>
           </provider>
@@ -523,12 +530,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494437180316</updated>
-      <workItem from="1494437184146" duration="4852000" />
+      <workItem from="1494437184146" duration="8502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4852000" />
+    <option name="totallyTimeSpent" value="8502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="741" y="0" width="1179" height="1200" extended-state="0" />
@@ -572,7 +579,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -590,21 +599,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="596">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1494443718000" expanded="true" signature="3121:3403" ph="CREATE TABLE... COMPANY" />
-            <marker date="1494443718000" expanded="true" signature="3121:3457" ph="CREATE TABLE... COMPANY" />
-            <marker date="1494443718000" expanded="true" signature="3528:3576" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3528:3577" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3528:3617" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3528:3624" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3528:3653" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3714:3762" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3714:3831" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="3892:4010" ph="INSERT INTO COMPANY... " />
-            <marker date="1494443718000" expanded="true" signature="4071:4192" ph="INSERT INTO COMPANY... " />
+            <element signature="e#3147#3192#0" expanded="false" />
+            <element signature="e#3457#3483#0" expanded="false" />
+            <element signature="e#3654#3692#0" expanded="false" />
+            <marker date="1494447573000" expanded="true" signature="1635:1986" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494447573000" expanded="true" signature="1790:1985" ph="SELECT a.Art... Artist" />
+            <marker date="1494447573000" expanded="true" signature="4601:4649" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4601:4650" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4601:4692" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4601:4699" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4601:4728" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4795:4843" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4795:4914" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="4981:5101" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="5168:5291" ph="INSERT INTO COMPANY... " />
+            <marker date="1494447573000" expanded="true" signature="5498:5519" ph="SELECT * FRO... COMPANY" />
+            <marker date="1494447573000" expanded="true" signature="6303:6350" ph="UPDATE COMPA... " />
+            <marker date="1494447573000" expanded="true" signature="6471:6492" ph="SELECT * FRO... COMPANY" />
           </folding>
         </state>
       </provider>

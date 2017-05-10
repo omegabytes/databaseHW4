@@ -3,35 +3,75 @@ import java.util.Scanner;
 
 public class SQLiteJDBC {
     public static void main(String[] args) {
-        //create menu
         int selection;
         int customerID;
         int trackID;
-        String artistName;
 
+        String artistName;
+        String sql;
+
+        Connection c = null;
+        Statement stmt = null;
         Scanner input = new Scanner(System.in);
 
+
+        //menu
         System.out.println("Please select from the following choices: ");
         System.out.println("------------------------------------------");
         System.out.println("1) Get albums by artist");
         System.out.println("2) Get customer purchase history");
         System.out.println("3) Update a track price");
-        System.out.println("4) Quit");
+        System.out.println("4) Quit\n");
+        System.out.print("Enter your choice: ");
 
         selection = input.nextInt();
+        input.nextLine(); //nextInt leaves a trailing end of line token, this takes care of it
+
+        try {
+            //opens the db connection
+            Class.forName("org.sqlite.JDBC");
+            c = DriverManager.getConnection("jdbc:sqlite:chinook.db");
+            c.setAutoCommit(false);
+//            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
 
         switch (selection) {
             case 1: //album by artist
                 System.out.println("Get album by artist");
-                //todo: obtain album titles based on artist name
                 //prompt user for artist name
-                System.out.println("Please enter artist's name: ");
-                artistName = input.next();
+                System.out.print("Please enter artist's name: ");
+                artistName = input.nextLine();
+                System.out.println(artistName);
 
                 //search db for album titles by this artist
-                //output album title and album ID
+                sql = "SELECT al.Title, al.AlbumId " +
+                        "FROM ALBUM al " +
+                        "WHERE al.ArtistId IN " +
+                            "(SELECT a.ArtistId " +
+                            "FROM Artist a " +
+                            "WHERE al.ArtistId = a.ArtistId " +
+                            "AND a.Name = '" + artistName + "');";
+
+                ResultSet rs = stmt.executeQuery(sql);
+
                 //indicate empty output with message
+                if (!rs.next()) {
+                    System.out.println("Could not find any albums by that artist");
+                }
+                //output album title and album ID
+                while (rs.next()) {
+                    String albumTitle = rs.getString("Title");
+                    int    albumId    = rs.getInt("AlbumId");
+
+                    System.out.println("Album Title: " + albumTitle + ", Album ID: " + albumId);
+                }
                 //multiple artists displayed as headers with artist name and ID
+
+                //close and cleanup database
+                rs.close();
+                stmt.close();
+                c.close();
                 break;
             case 2: //purchase history
                 System.out.println("Get customer purchase history");
@@ -65,51 +105,85 @@ public class SQLiteJDBC {
         }
 
         //database operations
-        Connection c = null;
-        Statement stmt = null;
-        try {
-            //opens the db connection
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:test.db"); //todo: change this to chinook.db
-            c.setAutoCommit(false);
-            System.out.println("Opened database successfully");
+//        Connection c = null;
+//        Statement stmt = null;
+//        try {
+//            //opens the db connection
+//            Class.forName("org.sqlite.JDBC");
+//            c = DriverManager.getConnection("jdbc:sqlite:chinook.db");
+//            c.setAutoCommit(false);
+//            System.out.println("Opened database successfully");
+//
+//            stmt = c.createStatement();
 
+//            //inserts records into table
+//            String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
+//                         "VALUES (1, 'Paul', 32, 'California', 20000.00);";
+//            stmt.executeUpdate(sql);
+//
+//            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
+//                    "VALUES (2, 'Allen', 25, 'Texas', 15000.00 );";
+//            stmt.executeUpdate(sql);
+//
+//            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
+//                    "VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );";
+//            stmt.executeUpdate(sql);
+//
+//            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
+//                    "VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );";
+//            stmt.executeUpdate(sql);
+//
+//            stmt.close();
+//            c.commit();
+//            c.close();
 
-            stmt = c.createStatement();
-//            //creates the table
-//            String sql = "CREATE TABLE COMPANY " +
-//                         "(ID INT PRIMARY KEY       NOT NULL, " +
-//                         " NAME           TEXT      NOT NULL, " +
-//                         " AGE            INT       NOT NULL, " +
-//                         " ADDRESS        CHAR(50), " +
-//                         " SALARY         REAL)";
+//            //select operation
+//            ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
+//            while (rs.next()) {
+//                int id          = rs.getInt("id");
+//                String name     = rs.getString("name");
+//                int age         = rs.getInt("age");
+//                String address  = rs.getString("address");
+//                float salary    = rs.getFloat("salary");
+//
+//                System.out.println( "ID = " + id );
+//                System.out.println( "NAME = " + name );
+//                System.out.println( "AGE = " + age );
+//                System.out.println( "ADDRESS = " + address );
+//                System.out.println( "SALARY = " + salary + "\n");
+//            }
+//            rs.close();
+//            stmt.close();
+//            c.close();
 
-            //inserts records into table
-            String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-                         "VALUES (1, 'Paul', 32, 'California', 20000.00);";
-            stmt.executeUpdate(sql);
-
-            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-                    "VALUES (2, 'Allen', 25, 'Texas', 15000.00 );";
-            stmt.executeUpdate(sql);
-
-            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-                    "VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );";
-            stmt.executeUpdate(sql);
-
-            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-                    "VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );";
-            stmt.executeUpdate(sql);
-
-            stmt.close();
-            c.commit();
-            c.close();
+//            //update operation
+//            String sql = "UPDATE COMPANY set SALARY = 25000.00 where ID=1;";
+//            stmt.executeUpdate(sql);
+//            c.commit();
+//
+//            ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;");
+//            while (rs.next()) {
+//                int id = rs.getInt("id");
+//                String  name = rs.getString("name");
+//                int age  = rs.getInt("age");
+//                String  address = rs.getString("address");
+//                float salary = rs.getFloat("salary");
+//                System.out.println( "ID = " + id );
+//                System.out.println( "NAME = " + name );
+//                System.out.println( "AGE = " + age );
+//                System.out.println( "ADDRESS = " + address );
+//                System.out.println( "SALARY = " + salary );
+//                System.out.println();
+//            }
+//            rs.close();
+//            stmt.close();
+//            c.close();
 
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        System.out.println("Records created successfully");
+        System.out.println("Operation done successfully");
     }
 }
 
