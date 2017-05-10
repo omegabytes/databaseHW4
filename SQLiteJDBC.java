@@ -4,35 +4,65 @@ import java.util.Scanner;
 public class SQLiteJDBC {
     public static void main(String[] args) {
         //create menu
-//        int selection;
-//        Scanner input = new Scanner(System.in);
-//
-//        System.out.println("Please select from the following choices: ");
-//        System.out.println("------------------------------------------");
-//        System.out.println("1) Get albums by artist");
-//        System.out.println("2) Get customer purchase history");
-//        System.out.println("3) Update a track price");
-//        System.out.println("4) Quit");
-//
-//        selection = input.nextInt();
-//
-//        switch (selection) {
-//            case 1: //album by artist
-//                System.out.println("Get album by artist");
-//                break;
-//            case 2: //purchase history
-//                System.out.println("Get customer purchase history");
-//                break;
-//            case 3: //update price
-//                System.out.println("Update a track price");
-//                break;
-//            case 4: //exit
-//                System.out.println("Goodbye!");
-//                System.exit(0);
-//                break;
-//            default: //bad input
-//                System.out.println("Unknown selection. Please enter an integer between 1 and 4");
-//        }
+        int selection;
+        int customerID;
+        int trackID;
+        String artistName;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please select from the following choices: ");
+        System.out.println("------------------------------------------");
+        System.out.println("1) Get albums by artist");
+        System.out.println("2) Get customer purchase history");
+        System.out.println("3) Update a track price");
+        System.out.println("4) Quit");
+
+        selection = input.nextInt();
+
+        switch (selection) {
+            case 1: //album by artist
+                System.out.println("Get album by artist");
+                //todo: obtain album titles based on artist name
+                //prompt user for artist name
+                System.out.println("Please enter artist's name: ");
+                artistName = input.next();
+
+                //search db for album titles by this artist
+                //output album title and album ID
+                //indicate empty output with message
+                //multiple artists displayed as headers with artist name and ID
+                break;
+            case 2: //purchase history
+                System.out.println("Get customer purchase history");
+                //todo: obtain purchase history for a customer
+                //prompt user for customer ID
+                System.out.println("Please enter the customer ID: ");
+                customerID = input.nextInt();
+
+                //search tables for customer purchase history
+                //output track name, album name, quantity, and invoice date
+                //indicated empty output with message
+                break;
+            case 3: //update price
+                System.out.println("Update a track price");
+                //todo: update track price
+                //prompt user for track ID
+                System.out.println("Please enter the track ID: ");
+                trackID = input.nextInt();
+
+                //display current unit price for track
+                //prompt user for new price
+                //update the record
+                //display the new record
+                break;
+            case 4: //exit
+                System.out.println("Goodbye!");
+                System.exit(0);
+                break;
+            default: //bad input
+                System.out.println("Unknown selection. Please enter an integer between 1 and 4");
+        }
 
         //database operations
         Connection c = null;
@@ -82,23 +112,6 @@ public class SQLiteJDBC {
         System.out.println("Records created successfully");
     }
 }
-//todo: create menu with following options:
-//todo: obtain album titles based on artist name
-//      - prompt user for artist name
-//      - search db for album titles by this artist
-//      - output album title and album ID
-//      - indicate empty output with message
-//      - multiple artists displayed as headers with artist name and ID
+
 //todo: OPTIONAL obtain tracks of an album title
-//todo: obtain purchase history for a customer
-//      - prompt user for customer ID
-//      - search tables for customer purchase history
-//      - output track name, album name, quantity, and invoice date
-//      - indicated empty output with message
-//todo: update track price
-//      - prompt user for track ID
-//      - display current unit price for track
-//      - prompt user for new price
-//      - update the record
-//      - display the new record
 //todo: OPTIONAL update track price - batch
