@@ -16,7 +16,7 @@ public class SQLiteJDBC {
         ResultSet rs = null;
         Scanner input = new Scanner(System.in);
 
-        while (selection != 4) {
+        while (selection != 8) {
 
             //menu
             System.out.println("Please select from the following choices: ");
@@ -24,7 +24,11 @@ public class SQLiteJDBC {
             System.out.println("1) Get albums by artist");
             System.out.println("2) Get customer purchase history");
             System.out.println("3) Update a track price");
-            System.out.println("4) Quit\n");
+            System.out.println("4) Marketing");
+            System.out.println("5) Track recommendation");
+            System.out.println("6) Top sellers by revenue");
+            System.out.println("7) Top sellers by volume");
+            System.out.println("8) Quit\n");
             System.out.print("Enter your choice: ");
 
             selection = input.nextInt();
@@ -162,7 +166,30 @@ public class SQLiteJDBC {
                         stmt.close();
                         c.close();
                         break;
-                    case 4: //exit
+                    case 4: //albums not purchased in a state
+                        System.out.println("Marketing information");
+                        //prompt user for state
+                        //search db for albums with one or more tracks not purchased in that state
+                        //search db for customers from state
+                        //print the ID and name of albums
+                        //print customer information
+                        break;
+                    case 5: //track recommendation
+                        System.out.println("Track recommendation");
+                        //prompt user for customer ID
+                        //search db for albums where customer has purchased 3+ distinct tracks
+                        //display other tracks from those albums
+                        break;
+                    case 6://top sellers by revenue
+                        System.out.println("Top sellers (revenue): ");
+                        //search db for the artist(s) who have highest sales revenue
+                        //unitPrice * quantity
+                        break;
+                    case 7: //top sellers by volume
+                        System.out.println("Top sellers (volume): ");
+                        //search db for artists whose tracks with the highest quantity sales
+                        break;
+                    case 8: //exit
                         System.out.println("Goodbye!");
                         System.exit(0);
                         break;
