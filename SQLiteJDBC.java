@@ -1,17 +1,19 @@
 import java.sql.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class SQLiteJDBC {
     public static void main(String[] args) {
         int selection;
         int customerID;
         int trackID;
+        double price;
 
         String artistName;
         String sql;
 
         Connection c = null;
         Statement stmt = null;
+        ResultSet rs = null;
         Scanner input = new Scanner(System.in);
 
 
@@ -36,154 +38,141 @@ public class SQLiteJDBC {
 
             stmt = c.createStatement();
 
-        switch (selection) {
-            case 1: //album by artist
-                System.out.println("Get album by artist");
-                //prompt user for artist name
-                System.out.print("Please enter artist's name: ");
-                artistName = input.nextLine();
-                System.out.println(artistName);
+            switch (selection) {
+                case 1: //album by artist
+                    System.out.println("Get album by artist");
+                    //prompt user for artist name
+                    System.out.print("Please enter artist's name: ");
+                    artistName = input.nextLine();
 
-                //search db for album titles by this artist
-                sql = "SELECT al.Title, al.AlbumId " +
-                        "FROM ALBUM al " +
-                        "WHERE al.ArtistId IN " +
+                    //search db for album titles by this artist
+                    sql = "SELECT al.Title, al.AlbumId " +
+                            "FROM ALBUM al " +
+                            "WHERE al.ArtistId IN " +
                             "(SELECT a.ArtistId " +
                             "FROM Artist a " +
                             "WHERE al.ArtistId = a.ArtistId " +
                             "AND a.Name = '" + artistName + "');";
 
-                ResultSet rs = stmt.executeQuery(sql);
+                    rs = stmt.executeQuery(sql);
 
-                //indicate empty output with message
-                if (!rs.next()) {
-                    System.out.println("Could not find any albums by that artist");
-                }
-                //output album title and album ID
-                while (rs.next()) {
-                    String albumTitle = rs.getString("Title");
-                    int    albumId    = rs.getInt("AlbumId");
+                    //indicate empty output with message
+                    if (!rs.next()) {
+                        System.out.println("Could not find any albums by that artist");
+                    }
+                    //output album title and album ID
+                    while (rs.next()) {
+                        String albumTitle = rs.getString("Title");
+                        int    albumId    = rs.getInt("AlbumId");
 
-                    System.out.println("Album Title: " + albumTitle + ", Album ID: " + albumId);
-                }
-                //multiple artists displayed as headers with artist name and ID
+                        System.out.println("Album Title: " + albumTitle + ", Album ID: " + albumId);
+                    }
+                    //multiple artists displayed as headers with artist name and ID
 
-                //close and cleanup database
-                rs.close();
-                stmt.close();
-                c.close();
-                break;
-            case 2: //purchase history
-                System.out.println("Get customer purchase history");
-                //todo: obtain purchase history for a customer
-                //prompt user for customer ID
-                System.out.println("Please enter the customer ID: ");
-                customerID = input.nextInt();
+                    //close and cleanup database
+                    rs.close();
+                    stmt.close();
+                    c.close();
+                    break;
+                case 2: //purchase history
+                    System.out.println("Get customer purchase history");
+                    //todo: obtain purchase history for a customer
+                    //prompt user for customer ID
+                    System.out.print("Please enter the customer ID: ");
+                    customerID = input.nextInt();
 
-                //search tables for customer purchase history
-                //output track name, album name, quantity, and invoice date
-                //indicated empty output with message
-                break;
-            case 3: //update price
-                System.out.println("Update a track price");
-                //todo: update track price
-                //prompt user for track ID
-                System.out.println("Please enter the track ID: ");
-                trackID = input.nextInt();
+                    //search tables for customer purchase history
 
-                //display current unit price for track
-                //prompt user for new price
-                //update the record
-                //display the new record
-                break;
-            case 4: //exit
-                System.out.println("Goodbye!");
-                System.exit(0);
-                break;
-            default: //bad input
-                System.out.println("Unknown selection. Please enter an integer between 1 and 4");
-        }
+                    sql = "SELECT t.Name, al.Title, il.Quantity, i.InvoiceDate " +
+                            "FROM Track t, Album al, InvoiceLine il, Invoice i " +
+                            "WHERE t.AlbumId = al.AlbumId " +
+                            "AND t.TrackId = il.TrackId " +
+                            "AND il.InvoiceId = i.InvoiceId " +
+                            "AND i.CustomerId = '" + customerID + "'";
 
-        //database operations
-//        Connection c = null;
-//        Statement stmt = null;
-//        try {
-//            //opens the db connection
-//            Class.forName("org.sqlite.JDBC");
-//            c = DriverManager.getConnection("jdbc:sqlite:chinook.db");
-//            c.setAutoCommit(false);
-//            System.out.println("Opened database successfully");
-//
-//            stmt = c.createStatement();
+//                System.out.println("Query: " + sql);
 
-//            //inserts records into table
-//            String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-//                         "VALUES (1, 'Paul', 32, 'California', 20000.00);";
-//            stmt.executeUpdate(sql);
-//
-//            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-//                    "VALUES (2, 'Allen', 25, 'Texas', 15000.00 );";
-//            stmt.executeUpdate(sql);
-//
-//            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-//                    "VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );";
-//            stmt.executeUpdate(sql);
-//
-//            sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-//                    "VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );";
-//            stmt.executeUpdate(sql);
-//
-//            stmt.close();
-//            c.commit();
-//            c.close();
+                    rs = stmt.executeQuery(sql);
 
-//            //select operation
-//            ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
-//            while (rs.next()) {
-//                int id          = rs.getInt("id");
-//                String name     = rs.getString("name");
-//                int age         = rs.getInt("age");
-//                String address  = rs.getString("address");
-//                float salary    = rs.getFloat("salary");
-//
-//                System.out.println( "ID = " + id );
-//                System.out.println( "NAME = " + name );
-//                System.out.println( "AGE = " + age );
-//                System.out.println( "ADDRESS = " + address );
-//                System.out.println( "SALARY = " + salary + "\n");
-//            }
-//            rs.close();
-//            stmt.close();
-//            c.close();
+                    //indicate empty output with message
+                    if(!rs.next()) {
+                        System.out.println("Could not find a customer by that ID, or the customer has no purchases.");
+                    }
 
-//            //update operation
-//            String sql = "UPDATE COMPANY set SALARY = 25000.00 where ID=1;";
-//            stmt.executeUpdate(sql);
-//            c.commit();
-//
-//            ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;");
-//            while (rs.next()) {
-//                int id = rs.getInt("id");
-//                String  name = rs.getString("name");
-//                int age  = rs.getInt("age");
-//                String  address = rs.getString("address");
-//                float salary = rs.getFloat("salary");
-//                System.out.println( "ID = " + id );
-//                System.out.println( "NAME = " + name );
-//                System.out.println( "AGE = " + age );
-//                System.out.println( "ADDRESS = " + address );
-//                System.out.println( "SALARY = " + salary );
-//                System.out.println();
-//            }
-//            rs.close();
-//            stmt.close();
-//            c.close();
+                    //output track name, album name, quantity, and invoice date
+                    while (rs.next()) {
+                        String trackName = rs.getString("Name");
+                        String albumName = rs.getString("Title");
+                        int quantity = rs.getInt("Quantity");
+                        String date = rs.getString("InvoiceDate");
 
+                        System.out.println(String.format("%-40s| %s", "Track: " + trackName,
+                                "Album: " + albumName));
+                        System.out.println(String.format("%-40s| %s", "Quantity: " + quantity,
+                                "Date: " + date));
+                        System.out.println("--------------------------------------------------------------------------");
+
+
+                    }
+
+                    rs.close();
+                    stmt.close();
+                    c.close();
+                    break;
+                case 3: //update price
+                    System.out.println("Update a track price");
+                    //todo: update track price
+                    //prompt user for track ID
+                    System.out.print("Please enter the track ID: ");
+                    trackID = input.nextInt();
+                    input.nextLine(); //nextInt leaves a trailing end of line token, this takes care of it
+
+
+                    //display current unit price for track
+                    sql  = " SELECT DISTINCT il.UnitPrice " +
+                            "FROM InvoiceLine il " +
+                            "WHERE il.TrackId = '"  + trackID + "';";
+
+                    rs = stmt.executeQuery(sql);
+
+                    //indicate empty output with message
+                    if(!rs.next()) {
+                        System.out.println("Could not find a track by that ID");
+                    }
+                    else {
+                        //prompt user for new price
+                        price = rs.getDouble("UnitPrice");
+                        System.out.print("Current Price: $" + price + " New Price: $");
+
+                        price = input.nextDouble();
+
+                        //update the record
+                        sql = "UPDATE InvoiceLine " +
+                                "SET UnitPRice = " + price +
+                                " WHERE TrackId = '"  + trackID + "'";
+                        stmt.executeUpdate(sql);
+                        c.commit();
+
+                        //display the new record
+                        rs = stmt.executeQuery( "SELECT * FROM InvoiceLine WHERE TrackId = '3456';");
+                        System.out.println("Updated price: $" + rs.getDouble("UnitPrice"));
+                    }
+
+                    rs.close();
+                    stmt.close();
+                    c.close();
+                    break;
+                case 4: //exit
+                    System.out.println("Goodbye!");
+                    System.exit(0);
+                    break;
+                default: //bad input
+                    System.out.println("Unknown selection. Please enter an integer between 1 and 4");
+            }
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        System.out.println("Operation done successfully");
     }
 }
 
