@@ -19,33 +19,33 @@
       <file leaf-file-name="SQLiteJDBC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1431">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="-219">
+              <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1494562689000" expanded="true" signature="1664:2023" ph="SELECT al.Ti... ALBUM" />
-                <marker date="1494562689000" expanded="true" signature="1827:2022" ph="SELECT a.Art... Artist" />
-                <marker date="1494562689000" expanded="true" signature="3342:3394" ph="SELECT t.Nam... " />
-                <marker date="1494562689000" expanded="true" signature="3342:3476" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="3342:3538" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="3342:3598" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="3342:3635" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="3342:3714" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="3342:3716" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="3342:3735" ph="SELECT t.Nam... Track" />
-                <marker date="1494562689000" expanded="true" signature="5539:5567" ph="SELECT DISTI... " />
-                <marker date="1494562689000" expanded="true" signature="5539:5571" ph="SELECT DISTI... " />
-                <marker date="1494562689000" expanded="true" signature="5539:5617" ph="SELECT DISTI... " />
-                <marker date="1494562689000" expanded="true" signature="5539:5618" ph="SELECT DISTI... " />
-                <marker date="1494562689000" expanded="true" signature="5539:5620" ph="SELECT DISTI... " />
-                <marker date="1494562689000" expanded="true" signature="5539:5621" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494562689000" expanded="true" signature="5539:5672" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494562689000" expanded="true" signature="5539:5674" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494562689000" expanded="true" signature="5539:5679" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494562689000" expanded="true" signature="5539:5686" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494562689000" expanded="true" signature="5539:5691" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494562689000" expanded="true" signature="6298:6450" ph="UPDATE Invoi... " />
-                <marker date="1494562689000" expanded="true" signature="6637:6685" ph="SELECT * FRO... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="1797:2180" ph="SELECT al.Ti... ALBUM" />
+                <marker date="1494563668000" expanded="true" signature="1972:2179" ph="SELECT a.Art... Artist" />
+                <marker date="1494563668000" expanded="true" signature="3701:3753" ph="SELECT t.Nam... " />
+                <marker date="1494563668000" expanded="true" signature="3701:3839" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="3701:3905" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="3701:3969" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="3701:4010" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="3701:4093" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="3701:4095" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="3701:4114" ph="SELECT t.Nam... Track" />
+                <marker date="1494563668000" expanded="true" signature="6028:6056" ph="SELECT DISTI... " />
+                <marker date="1494563668000" expanded="true" signature="6028:6060" ph="SELECT DISTI... " />
+                <marker date="1494563668000" expanded="true" signature="6028:6110" ph="SELECT DISTI... " />
+                <marker date="1494563668000" expanded="true" signature="6028:6111" ph="SELECT DISTI... " />
+                <marker date="1494563668000" expanded="true" signature="6028:6113" ph="SELECT DISTI... " />
+                <marker date="1494563668000" expanded="true" signature="6028:6114" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="6028:6169" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="6028:6171" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="6028:6175" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="6028:6182" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="6028:6187" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494563668000" expanded="true" signature="6819:6978" ph="UPDATE Invoi... " />
+                <marker date="1494563668000" expanded="true" signature="7180:7228" ph="SELECT * FRO... InvoiceLine" />
               </folding>
             </state>
           </provider>
@@ -540,7 +540,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18597000" />
+    <option name="totallyTimeSpent" value="19150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="533" y="0" width="1387" height="1200" extended-state="6" />
@@ -558,7 +558,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16902655" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24955752" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13531598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -604,33 +604,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1431">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1494562689000" expanded="true" signature="1664:2023" ph="SELECT al.Ti... ALBUM" />
-            <marker date="1494562689000" expanded="true" signature="1827:2022" ph="SELECT a.Art... Artist" />
-            <marker date="1494562689000" expanded="true" signature="3342:3394" ph="SELECT t.Nam... " />
-            <marker date="1494562689000" expanded="true" signature="3342:3476" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="3342:3538" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="3342:3598" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="3342:3635" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="3342:3714" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="3342:3716" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="3342:3735" ph="SELECT t.Nam... Track" />
-            <marker date="1494562689000" expanded="true" signature="5539:5567" ph="SELECT DISTI... " />
-            <marker date="1494562689000" expanded="true" signature="5539:5571" ph="SELECT DISTI... " />
-            <marker date="1494562689000" expanded="true" signature="5539:5617" ph="SELECT DISTI... " />
-            <marker date="1494562689000" expanded="true" signature="5539:5618" ph="SELECT DISTI... " />
-            <marker date="1494562689000" expanded="true" signature="5539:5620" ph="SELECT DISTI... " />
-            <marker date="1494562689000" expanded="true" signature="5539:5621" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494562689000" expanded="true" signature="5539:5672" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494562689000" expanded="true" signature="5539:5674" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494562689000" expanded="true" signature="5539:5679" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494562689000" expanded="true" signature="5539:5686" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494562689000" expanded="true" signature="5539:5691" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494562689000" expanded="true" signature="6298:6450" ph="UPDATE Invoi... " />
-            <marker date="1494562689000" expanded="true" signature="6637:6685" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="1797:2180" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494563668000" expanded="true" signature="1972:2179" ph="SELECT a.Art... Artist" />
+            <marker date="1494563668000" expanded="true" signature="3701:3753" ph="SELECT t.Nam... " />
+            <marker date="1494563668000" expanded="true" signature="3701:3839" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:3905" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:3969" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4010" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4093" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4095" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4114" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="6028:6056" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6060" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6110" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6111" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6113" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6114" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6169" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6171" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6175" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6182" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6187" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6819:6978" ph="UPDATE Invoi... " />
+            <marker date="1494563668000" expanded="true" signature="7180:7228" ph="SELECT * FRO... InvoiceLine" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.java" />
+    <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1494563668000" expanded="true" signature="1797:2180" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494563668000" expanded="true" signature="1972:2179" ph="SELECT a.Art... Artist" />
+            <marker date="1494563668000" expanded="true" signature="3701:3753" ph="SELECT t.Nam... " />
+            <marker date="1494563668000" expanded="true" signature="3701:3839" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:3905" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:3969" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4010" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4093" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4095" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4114" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="6028:6056" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6060" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6110" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6111" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6113" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6114" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6169" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6171" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6175" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6182" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6187" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6819:6978" ph="UPDATE Invoi... " />
+            <marker date="1494563668000" expanded="true" signature="7180:7228" ph="SELECT * FRO... InvoiceLine" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.java" />
+    <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1494563668000" expanded="true" signature="1797:2180" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494563668000" expanded="true" signature="1972:2179" ph="SELECT a.Art... Artist" />
+            <marker date="1494563668000" expanded="true" signature="3701:3753" ph="SELECT t.Nam... " />
+            <marker date="1494563668000" expanded="true" signature="3701:3839" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:3905" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:3969" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4010" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4093" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4095" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="3701:4114" ph="SELECT t.Nam... Track" />
+            <marker date="1494563668000" expanded="true" signature="6028:6056" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6060" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6110" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6111" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6113" ph="SELECT DISTI... " />
+            <marker date="1494563668000" expanded="true" signature="6028:6114" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6169" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6171" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6175" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6182" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6028:6187" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494563668000" expanded="true" signature="6819:6978" ph="UPDATE Invoi... " />
+            <marker date="1494563668000" expanded="true" signature="7180:7228" ph="SELECT * FRO... InvoiceLine" />
           </folding>
         </state>
       </provider>
