@@ -9,6 +9,8 @@ public class SQLiteJDBC {
         double price;
 
         String artistName;
+        String state;
+
         String sql;
 
         Connection c = null;
@@ -62,7 +64,7 @@ public class SQLiteJDBC {
                         rs = stmt.executeQuery(sql);
 
                         //indicate empty output with message
-                        if (!rs.next()) {
+                        if (!rs.isBeforeFirst()) { //isBeforeFirst returns true if there is data
                             System.out.println("Could not find any albums by that artist");
                         }
                         //output album title and album ID
@@ -84,7 +86,6 @@ public class SQLiteJDBC {
                         break;
                     case 2: //purchase history
                         System.out.println("Get customer purchase history");
-                        //todo: obtain purchase history for a customer
                         //prompt user for customer ID
                         System.out.print("Please enter the customer ID: ");
                         customerID = input.nextInt();
@@ -100,8 +101,10 @@ public class SQLiteJDBC {
 
                         rs = stmt.executeQuery(sql);
 
+
+
                         //indicate empty output with message
-                        if (!rs.next()) {
+                        if (!rs.isBeforeFirst()) {
                             System.out.println("Could not find a customer by that ID, or the customer has no purchases.\n");
                         }
 
@@ -126,12 +129,10 @@ public class SQLiteJDBC {
                         break;
                     case 3: //update price
                         System.out.println("Update a track price");
-                        //todo: update track price
                         //prompt user for track ID
                         System.out.print("Please enter the track ID: ");
                         trackID = input.nextInt();
                         input.nextLine(); //nextInt leaves a trailing end of line token, this takes care of it
-
 
                         //display current unit price for track
                         sql = " SELECT DISTINCT il.UnitPrice " +
@@ -141,7 +142,7 @@ public class SQLiteJDBC {
                         rs = stmt.executeQuery(sql);
 
                         //indicate empty output with message
-                        if (!rs.next()) {
+                        if (!rs.isBeforeFirst()) {
                             System.out.println("Could not find a track by that ID");
                         } else {
                             //prompt user for new price
@@ -158,7 +159,12 @@ public class SQLiteJDBC {
                             c.commit();
 
                             //display the new record
-                            rs = stmt.executeQuery("SELECT * FROM InvoiceLine WHERE TrackId = '3456';");
+//                            rs = stmt.executeQuery("SELECT * FROM InvoiceLine WHERE TrackId = '3456';");
+                            sql = "SELECT il.UnitPrice FROM InvoiceLine il WHERE  TrackId = '" + trackID + "'";
+
+                            stmt.executeQuery(sql);
+//                            c.commit();
+
                             System.out.println("Updated price: $" + rs.getDouble("UnitPrice") + "\n");
                         }
 
@@ -169,14 +175,76 @@ public class SQLiteJDBC {
                     case 4: //albums not purchased in a state
                         System.out.println("Marketing information");
                         //prompt user for state
+                        System.out.print("Please enter the state (eg. TX) you wish to see information on: ");
+                        state = input.nextLine();
+
                         //search db for albums with one or more tracks not purchased in that state
-                        //search db for customers from state
+                        sql = "select AlbumId, Title " +
+                        "from Album " +
+                        "where AlbumId IN ( " +
+                            "select DISTINCT  AlbumId " +
+                            "from track " +
+                            "where TrackId IN ( " +
+                                    "select TrackId " +
+                                    "from InvoiceLine " +
+                                    " where InvoiceId IN ( " +
+                                            "select InvoiceID " +
+                                            "from Invoice " +
+                                            "where BillingState IS NOT '" + state + "')));";
+
+                        rs = stmt.executeQuery(sql);
+
                         //print the ID and name of albums
+                        if(!rs.isBeforeFirst()) {
+                            System.out.println("No purchase information for that state");
+                        }
+                        while(rs.next()) {
+                            String albumName = rs.getString("Title");
+                            int albumId = rs.getInt("AlbumId");
+
+                            System.out.println(String.format("%-15s| %s", "ID: " + albumId,
+                                    "Title: " + albumName));
+                            System.out.println("--------------------------------------------------------------------------");
+
+                        }
+
+                        //search db for customers from state
+                        sql = "SELECT CustomerID, PostalCode, LastName, City " +
+                                "FROM Customer " +
+                                "WHERE State = '" + state + "'";
+
+
+                        rs = stmt.executeQuery(sql);
+
                         //print customer information
+                        if(!rs.isBeforeFirst()) {
+                            System.out.println("No customer information for that state");
+                        } else {
+                            System.out.println("Customer information: ");
+
+                            while(rs.next()) {
+                                customerID = rs.getInt("CustomerId");
+                                int postalCode = rs.getInt("PostalCode");
+                                String lname = rs.getString("LastName");
+                                String city = rs.getString("City");
+
+                                System.out.println(String.format("%-30s| %s", "ID: " + customerID,
+                                        "Last name: " + lname));
+                                System.out.println(String.format("%-30s| %s", "City: " + city,
+                                        "Zip: " + postalCode));
+                                System.out.println("--------------------------------------------------------------------------");
+                            }
+                        }
+
+
+                        rs.close();
+                        stmt.close();
+                        c.close();
                         break;
                     case 5: //track recommendation
                         System.out.println("Track recommendation");
                         //prompt user for customer ID
+                        System.out.print("Please enter customer ID: ");
                         //search db for albums where customer has purchased 3+ distinct tracks
                         //display other tracks from those albums
                         break;

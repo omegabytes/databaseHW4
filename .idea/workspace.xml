@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc40dc6-9404-4af3-8dfd-881e2a249b42" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chinook.db" afterPath="$PROJECT_DIR$/chinook.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLiteJDBC.java" afterPath="$PROJECT_DIR$/SQLiteJDBC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,33 +19,74 @@
       <file leaf-file-name="SQLiteJDBC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="190" column="30" lean-forward="true" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
+            <state relative-caret-position="445">
+              <caret line="213" column="47" lean-forward="true" selection-start-line="213" selection-start-column="47" selection-end-line="213" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1494614208000" expanded="true" signature="2025:2408" ph="SELECT al.Ti... ALBUM" />
-                <marker date="1494614208000" expanded="true" signature="2200:2407" ph="SELECT a.Art... Artist" />
-                <marker date="1494614208000" expanded="true" signature="3929:3981" ph="SELECT t.Nam... " />
-                <marker date="1494614208000" expanded="true" signature="3929:4067" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="3929:4133" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="3929:4197" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="3929:4238" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="3929:4321" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="3929:4323" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="3929:4342" ph="SELECT t.Nam... Track" />
-                <marker date="1494614208000" expanded="true" signature="6256:6284" ph="SELECT DISTI... " />
-                <marker date="1494614208000" expanded="true" signature="6256:6288" ph="SELECT DISTI... " />
-                <marker date="1494614208000" expanded="true" signature="6256:6338" ph="SELECT DISTI... " />
-                <marker date="1494614208000" expanded="true" signature="6256:6339" ph="SELECT DISTI... " />
-                <marker date="1494614208000" expanded="true" signature="6256:6341" ph="SELECT DISTI... " />
-                <marker date="1494614208000" expanded="true" signature="6256:6342" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494614208000" expanded="true" signature="6256:6397" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494614208000" expanded="true" signature="6256:6399" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494614208000" expanded="true" signature="6256:6403" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494614208000" expanded="true" signature="6256:6410" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494614208000" expanded="true" signature="6256:6415" ph="SELECT DISTI... InvoiceLine" />
-                <marker date="1494614208000" expanded="true" signature="7047:7206" ph="UPDATE Invoi... " />
-                <marker date="1494614208000" expanded="true" signature="7408:7456" ph="SELECT * FRO... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="2048:2431" ph="SELECT al.Ti... ALBUM" />
+                <marker date="1494630910000" expanded="true" signature="2223:2430" ph="SELECT a.Art... Artist" />
+                <marker date="1494630910000" expanded="true" signature="3936:3988" ph="SELECT t.Nam... " />
+                <marker date="1494630910000" expanded="true" signature="3936:4074" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="3936:4140" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="3936:4204" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="3936:4245" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="3936:4328" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="3936:4330" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="3936:4349" ph="SELECT t.Nam... Track" />
+                <marker date="1494630910000" expanded="true" signature="6222:6250" ph="SELECT DISTI... " />
+                <marker date="1494630910000" expanded="true" signature="6222:6254" ph="SELECT DISTI... " />
+                <marker date="1494630910000" expanded="true" signature="6222:6304" ph="SELECT DISTI... " />
+                <marker date="1494630910000" expanded="true" signature="6222:6305" ph="SELECT DISTI... " />
+                <marker date="1494630910000" expanded="true" signature="6222:6307" ph="SELECT DISTI... " />
+                <marker date="1494630910000" expanded="true" signature="6222:6308" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="6222:6363" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="6222:6365" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="6222:6369" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="6222:6376" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="6222:6381" ph="SELECT DISTI... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="7022:7181" ph="UPDATE Invoi... " />
+                <marker date="1494630910000" expanded="true" signature="7385:7433" ph="SELECT * FRO... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="7473:7531" ph="SELECT il.Un... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="7473:7535" ph="SELECT il.Un... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="7473:7547" ph="SELECT il.Un... InvoiceLine" />
+                <marker date="1494630910000" expanded="true" signature="8386:8406" ph="select Album... " />
+                <marker date="1494630910000" expanded="true" signature="8386:8407" ph="select Album... " />
+                <marker date="1494630910000" expanded="true" signature="8386:8408" ph="select Album... " />
+                <marker date="1494630910000" expanded="true" signature="8386:8446" ph="select Album... Albu" />
+                <marker date="1494630910000" expanded="true" signature="8386:8447" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8448" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8493" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8495" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8496" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8552" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8554" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8596" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8597" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8598" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8647" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8649" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8650" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8704" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8706" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8762" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8764" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8824" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8826" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8827" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8891" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8893" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8953" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8954" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:8955" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:9031" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8386:9048" ph="select Album... Album" />
+                <marker date="1494630910000" expanded="true" signature="8529:8552" ph="select DISTI... " />
+                <marker date="1494630910000" expanded="true" signature="8691:8704" ph="select Track... " />
+                <marker date="1494630910000" expanded="true" signature="8876:8891" ph="select Invoi... " />
+                <marker date="1494630910000" expanded="true" signature="9908:10004" ph="SELECT * FRO... Customer" />
+                <marker date="1494630910000" expanded="true" signature="9908:10055" ph="SELECT * FRO... Customer" />
+                <marker date="1494630910000" expanded="true" signature="9908:10057" ph="SELECT * FRO... Customer" />
+                <marker date="1494630910000" expanded="true" signature="9908:10071" ph="SELECT * FRO... Customer" />
               </folding>
             </state>
           </provider>
@@ -82,8 +124,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="741" />
-    <option name="width" value="1179" />
+    <option name="x" value="508" />
+    <option name="width" value="1412" />
     <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -128,7 +170,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="FullScreen" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -142,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -287,19 +329,31 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="CBConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="HTTP_PORT_X" value="8080" />
+        <option name="JNDI_PORT" value="1099" />
+        <option name="USERNAME" value="" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
+      <option name="myFilePath" value="" />
+      <option name="GLUE" value="" />
       <option name="myNameFilter" />
       <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -523,6 +577,24 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="false" name="main" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="SQLiteJDBC" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="HW4" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.main" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -539,10 +611,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21941000" />
+    <option name="totallyTimeSpent" value="29228000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="741" y="0" width="1179" height="1200" extended-state="0" />
+    <frame x="508" y="0" width="1412" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -557,11 +629,12 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108849555" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18761063" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16007036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13284671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -569,11 +642,33 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16902655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13531598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +679,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SQLiteJDBC.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -607,29 +710,70 @@
           <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1494614208000" expanded="true" signature="2025:2408" ph="SELECT al.Ti... ALBUM" />
-            <marker date="1494614208000" expanded="true" signature="2200:2407" ph="SELECT a.Art... Artist" />
-            <marker date="1494614208000" expanded="true" signature="3929:3981" ph="SELECT t.Nam... " />
-            <marker date="1494614208000" expanded="true" signature="3929:4067" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4133" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4197" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4238" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4321" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4323" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4342" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="6256:6284" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6288" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6338" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6339" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6341" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6342" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6397" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6399" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6403" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6410" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6415" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="7047:7206" ph="UPDATE Invoi... " />
-            <marker date="1494614208000" expanded="true" signature="7408:7456" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="2048:2431" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494630910000" expanded="true" signature="2223:2430" ph="SELECT a.Art... Artist" />
+            <marker date="1494630910000" expanded="true" signature="3936:3988" ph="SELECT t.Nam... " />
+            <marker date="1494630910000" expanded="true" signature="3936:4074" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4140" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4204" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4245" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4328" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4330" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4349" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="6222:6250" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6254" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6304" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6305" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6307" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6308" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6363" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6365" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6369" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6376" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6381" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7022:7181" ph="UPDATE Invoi... " />
+            <marker date="1494630910000" expanded="true" signature="7385:7433" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7531" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7535" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7547" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="8386:8406" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8407" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8408" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8446" ph="select Album... Albu" />
+            <marker date="1494630910000" expanded="true" signature="8386:8447" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8448" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8493" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8495" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8496" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8552" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8554" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8596" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8597" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8598" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8647" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8649" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8650" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8704" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8706" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8762" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8764" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8824" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8826" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8827" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8891" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8893" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8953" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8954" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8955" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:9031" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:9048" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8529:8552" ph="select DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="8691:8704" ph="select Track... " />
+            <marker date="1494630910000" expanded="true" signature="8876:8891" ph="select Invoi... " />
+            <marker date="1494630910000" expanded="true" signature="9908:10004" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10055" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10057" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10071" ph="SELECT * FRO... Customer" />
           </folding>
         </state>
       </provider>
@@ -641,29 +785,70 @@
           <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1494614208000" expanded="true" signature="2025:2408" ph="SELECT al.Ti... ALBUM" />
-            <marker date="1494614208000" expanded="true" signature="2200:2407" ph="SELECT a.Art... Artist" />
-            <marker date="1494614208000" expanded="true" signature="3929:3981" ph="SELECT t.Nam... " />
-            <marker date="1494614208000" expanded="true" signature="3929:4067" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4133" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4197" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4238" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4321" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4323" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4342" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="6256:6284" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6288" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6338" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6339" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6341" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6342" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6397" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6399" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6403" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6410" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6415" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="7047:7206" ph="UPDATE Invoi... " />
-            <marker date="1494614208000" expanded="true" signature="7408:7456" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="2048:2431" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494630910000" expanded="true" signature="2223:2430" ph="SELECT a.Art... Artist" />
+            <marker date="1494630910000" expanded="true" signature="3936:3988" ph="SELECT t.Nam... " />
+            <marker date="1494630910000" expanded="true" signature="3936:4074" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4140" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4204" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4245" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4328" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4330" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4349" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="6222:6250" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6254" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6304" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6305" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6307" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6308" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6363" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6365" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6369" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6376" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6381" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7022:7181" ph="UPDATE Invoi... " />
+            <marker date="1494630910000" expanded="true" signature="7385:7433" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7531" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7535" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7547" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="8386:8406" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8407" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8408" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8446" ph="select Album... Albu" />
+            <marker date="1494630910000" expanded="true" signature="8386:8447" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8448" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8493" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8495" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8496" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8552" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8554" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8596" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8597" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8598" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8647" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8649" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8650" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8704" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8706" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8762" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8764" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8824" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8826" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8827" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8891" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8893" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8953" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8954" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8955" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:9031" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:9048" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8529:8552" ph="select DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="8691:8704" ph="select Track... " />
+            <marker date="1494630910000" expanded="true" signature="8876:8891" ph="select Invoi... " />
+            <marker date="1494630910000" expanded="true" signature="9908:10004" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10055" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10057" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10071" ph="SELECT * FRO... Customer" />
           </folding>
         </state>
       </provider>
@@ -671,33 +856,74 @@
     <entry file="file://$PROJECT_DIR$/main.java" />
     <entry file="file://$PROJECT_DIR$/SQLiteJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="190" column="30" lean-forward="true" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
+        <state relative-caret-position="445">
+          <caret line="213" column="47" lean-forward="true" selection-start-line="213" selection-start-column="47" selection-end-line="213" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1494614208000" expanded="true" signature="2025:2408" ph="SELECT al.Ti... ALBUM" />
-            <marker date="1494614208000" expanded="true" signature="2200:2407" ph="SELECT a.Art... Artist" />
-            <marker date="1494614208000" expanded="true" signature="3929:3981" ph="SELECT t.Nam... " />
-            <marker date="1494614208000" expanded="true" signature="3929:4067" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4133" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4197" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4238" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4321" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4323" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="3929:4342" ph="SELECT t.Nam... Track" />
-            <marker date="1494614208000" expanded="true" signature="6256:6284" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6288" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6338" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6339" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6341" ph="SELECT DISTI... " />
-            <marker date="1494614208000" expanded="true" signature="6256:6342" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6397" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6399" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6403" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6410" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="6256:6415" ph="SELECT DISTI... InvoiceLine" />
-            <marker date="1494614208000" expanded="true" signature="7047:7206" ph="UPDATE Invoi... " />
-            <marker date="1494614208000" expanded="true" signature="7408:7456" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="2048:2431" ph="SELECT al.Ti... ALBUM" />
+            <marker date="1494630910000" expanded="true" signature="2223:2430" ph="SELECT a.Art... Artist" />
+            <marker date="1494630910000" expanded="true" signature="3936:3988" ph="SELECT t.Nam... " />
+            <marker date="1494630910000" expanded="true" signature="3936:4074" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4140" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4204" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4245" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4328" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4330" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="3936:4349" ph="SELECT t.Nam... Track" />
+            <marker date="1494630910000" expanded="true" signature="6222:6250" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6254" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6304" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6305" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6307" ph="SELECT DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="6222:6308" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6363" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6365" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6369" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6376" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="6222:6381" ph="SELECT DISTI... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7022:7181" ph="UPDATE Invoi... " />
+            <marker date="1494630910000" expanded="true" signature="7385:7433" ph="SELECT * FRO... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7531" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7535" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="7473:7547" ph="SELECT il.Un... InvoiceLine" />
+            <marker date="1494630910000" expanded="true" signature="8386:8406" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8407" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8408" ph="select Album... " />
+            <marker date="1494630910000" expanded="true" signature="8386:8446" ph="select Album... Albu" />
+            <marker date="1494630910000" expanded="true" signature="8386:8447" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8448" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8493" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8495" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8496" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8552" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8554" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8596" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8597" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8598" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8647" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8649" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8650" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8704" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8706" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8762" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8764" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8824" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8826" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8827" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8891" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8893" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8953" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8954" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:8955" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:9031" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8386:9048" ph="select Album... Album" />
+            <marker date="1494630910000" expanded="true" signature="8529:8552" ph="select DISTI... " />
+            <marker date="1494630910000" expanded="true" signature="8691:8704" ph="select Track... " />
+            <marker date="1494630910000" expanded="true" signature="8876:8891" ph="select Invoi... " />
+            <marker date="1494630910000" expanded="true" signature="9908:10004" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10055" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10057" ph="SELECT * FRO... Customer" />
+            <marker date="1494630910000" expanded="true" signature="9908:10071" ph="SELECT * FRO... Customer" />
           </folding>
         </state>
       </provider>
